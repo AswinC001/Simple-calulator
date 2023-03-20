@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="calculator.css">
+
+    <title>Simple calculator</title>
+</head>
+<body>
+    <div class="Calc">       
+    <p>Calculator</p>
+   
+ 
+    <input  id="opinput" type="text" >
+    <br>
+    <input  id="display" type="text" readonly>
+    <div class="buttons">
+   
+    <input value ='+' type="button" onclick="opinput.value += '+'">
+    <input value ="1" type="button" onclick="opinput.value += '1' ">
+    <input value ='2' type="button" onclick="opinput.value += '2'">
+    <input value ='3' type="button" onclick="opinput.value += '3'">
+    <br>
+    <input value ='-' type="button" onclick="opinput.value += '-'">
+    <input value ='4' type="button" onclick="opinput.value += '4'">
+    <input value ='5' type="button" onclick="opinput.value += '5'">
+    <input value ='6' type="button" onclick="opinput.value += '6'">
+    <br>
+    <input value ='*' type="button" onclick="opinput.value += '*'">
+    <input value ='7' type="button" onclick="opinput.value += '7'">
+    <input value ='8' type="button" onclick="opinput.value += '8'">
+    <input value ='9' type="button" onclick="opinput.value += '9'">
+    <br>
+    <input value ='/' type="button" onclick="opinput.value += '/'">
+    <input value ='0' type="button" onclick="opinput.value += '0'">
+    <input value ="." type="button" onclick="opinput.value += '.' ">
+    <input value ='**' type="button" onclick="opinput.value += '**'">
+    <br>
+
+   
+    
+    <input value ='AC' type="button" onclick="opinput.value = ''; display.value='0'">
+    <input value ="Clear" id="clear" type="button" onclick="opinput.value = opinput.value.slice(0,-1)">
+    
+    <input value ='=' id="equals" type="button" onclick="display.value =eval(opinput.value)">
+</div>
+</div>
+
+</body>
+</html>
