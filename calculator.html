@@ -14,41 +14,42 @@
     <div class="Calc">       
     <p>Calculator</p>
    
- 
-    <input  id="opinput" type="text" >
+    <div class="display-field">
+    <input  id="opinput" type="text"  readonly >
     <br>
     <input  id="display" type="text" readonly>
+    </div>
     <div class="buttons">
    
-    <input value ='+' type="button" onclick="opinput.value += '+'">
-    <input value ="1" type="button" onclick="opinput.value += '1' ">
-    <input value ='2' type="button" onclick="opinput.value += '2'">
-    <input value ='3' type="button" onclick="opinput.value += '3'">
+    <input value ='+' type="button" onclick="calculator('+')">
+    <input value ="1" type="button" onclick="calculator('1')">
+    <input value ='2' type="button" onclick="calculator('2')">
+    <input value ='3' type="button" onclick="calculator('3')">
     <br>
-    <input value ='-' type="button" onclick="opinput.value += '-'">
-    <input value ='4' type="button" onclick="opinput.value += '4'">
-    <input value ='5' type="button" onclick="opinput.value += '5'">
-    <input value ='6' type="button" onclick="opinput.value += '6'">
+    <input value ='-' type="button" onclick="calculator('-')">
+    <input value ='4' type="button" onclick="calculator('4')">
+    <input value ='5' type="button" onclick="calculator('5')">
+    <input value ='6' type="button" onclick="calculator('6')">
     <br>
-    <input value ='*' type="button" onclick="opinput.value += '*'">
-    <input value ='7' type="button" onclick="opinput.value += '7'">
-    <input value ='8' type="button" onclick="opinput.value += '8'">
-    <input value ='9' type="button" onclick="opinput.value += '9'">
+    <input value ='*' type="button" onclick="calculator('*')">
+    <input value ='7' type="button" onclick="calculator('7')">
+    <input value ='8' type="button" onclick="calculator('8')">
+    <input value ='9' type="button" onclick="calculator('9')">
     <br>
-    <input value ='/' type="button" onclick="opinput.value += '/'">
-    <input value ='0' type="button" onclick="opinput.value += '0'">
-    <input value ="." type="button" onclick="opinput.value += '.' ">
-    <input value ='**' type="button" onclick="opinput.value += '**'">
+    <input value ='/' type="button" onclick="calculator('/')">
+    <input value ='0' type="button" onclick="calculator('0')">
+    <input value ="." type="button" onclick="calculator('.') ">
+    <input value ='**' type="button" onclick="calculator('**')">
     <br>
 
    
     
-    <input value ='AC' type="button" onclick="opinput.value = ''; display.value='0'">
-    <input value ="Clear" id="clear" type="button" onclick="opinput.value = opinput.value.slice(0,-1)">
+    <input value ='AC' type="button" onclick="calculator('AC')">
+    <input value ="Clear" id="clear" type="button" onclick="calculator('Clear')">
     
-    <input value ='=' id="equals" type="button" onclick="display.value =eval(opinput.value)">
+    <input value ='=' id="equals" type="button" onclick="calculator('=')">
 </div>
 </div>
-
+<script src="calculator.js"></script>
 </body>
 </html>
